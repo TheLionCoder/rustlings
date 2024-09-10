@@ -10,10 +10,13 @@ fn factorial(num: u64) -> u64 {
     // - additional variables
     // For an extra challenge, don't use:
     // - recursion
+    (1..=num).fold(1, |acc: u64, x: u64 | acc * x) 
+
 }
 
 fn main() {
     // You can optionally experiment here.
+    println!("{}", factorial(0))
 }
 
 #[cfg(test)]
